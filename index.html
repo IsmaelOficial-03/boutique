@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boutique Anshi | Moda exclusiva</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo">
+        <img src="logo.jpg" alt="Boutique Anshi" class="logo-img" />
+        <span class="logo-text">BOUTIQUE ANSHI</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#productos" class="nav-link">Productos</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <div class="user-area" id="userArea">
+          <button class="btn-login" id="btnLogin">Iniciar sesión</button>
+        </div>
+        <button class="btn-admin" id="btnAdmin" title="Modo administrador">⚙</button>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Elegancia que define<br />tu estilo</h1>
+      <p>Descubre piezas exclusivas de ropa diseñadas para mujeres que valoran la calidad, el detalle y la sofisticación.</p>
+      <a href="#productos" class="btn btn-primary">Ver colección</a>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section id="productos" class="section productos">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nuestra Colección</h2>
+        <p>Piezas seleccionadas con cuidado para ti</p>
+      </div>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Todo</button>
+        <button class="filter-btn" data-filter="vestidos">Vestidos</button>
+        <button class="filter-btn" data-filter="blusas">Blusas</button>
+        <button class="filter-btn" data-filter="pantalones">Pantalones</button>
+        <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+      </div>
+      <div class="productos-grid" id="productosGrid">
+        <!-- Productos se cargan con JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="section nosotros">
+    <div class="container nosotros-grid">
+      <div class="nosotros-text">
+        <h2>Sobre Boutique Anshi</h2>
+        <p>En <strong>Boutique Anshi</strong> creemos que la moda es una forma de expresión personal. Cada prenda que seleccionamos está pensada para realzar la belleza natural de la mujer moderna: elegante, segura y auténtica.</p>
+        <p>Trabajamos con materiales de alta calidad y diseños atemporales que combinan tendencia y sofisticación. Nuestra misión es ofrecerte piezas únicas que se sientan tan especiales como tú.</p>
+        <ul class="features">
+          <li>✓ Envíos a todo el país</li>
+          <li>✓ Atención personalizada</li>
+          <li>✓ Calidad garantizada</li>
+          <li>✓ Piezas exclusivas</li>
+        </ul>
+      </div>
+      <div class="nosotros-visual">
+        <div class="visual-card">
+          <img src="logo.jpg" alt="Logo Anshi" />
+          <p>Diseño con alma</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section contacto">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna consulta? Escríbenos</p>
+      </div>
+      <div class="contacto-grid">
+        <form class="contacto-form" id="contactoForm">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="¿En qué podemos ayudarte?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+        <div class="contacto-info">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div>
+              <h4>Ubicación</h4>
+              <p>Ciudad, País<br />(Actualiza con tu dirección)</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📱</span>
+            <div>
+              <h4>WhatsApp</h4>
+              <p>+00 000 000 000<br />(Agrega tu número)</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">✉️</span>
+            <div>
+              <h4>Email</h4>
+              <p>hola@boutiqueanshi.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🕒</span>
+            <div>
+              <h4>Horario</h4>
+              <p>Lun - Sáb: 10:00 - 19:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="Boutique Anshi" class="footer-logo" />
+        <p>BOUTIQUE ANSHI</p>
+      </div>
+      <p class="copyright">© 2025 Boutique Anshi. Todos los derechos reservados.</p>
+      <div class="social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="WhatsApp">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Producto -->
+  <div class="modal" id="productModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content login-modal">
+      <button class="modal-close" id="loginClose">&times;</button>
+      <div class="login-body">
+        <img src="logo.jpg" alt="Boutique Anshi" class="login-logo" />
+        <h2>Bienvenida a Boutique Anshi</h2>
+        <p>Inicia sesión para comprar y guardar tus favoritos</p>
+        <button class="btn-google" id="btnGoogleLogin">
+          <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+          Continuar con Google
+        </button>
+        <p class="login-note">Al continuar, aceptas nuestros términos y política de privacidad.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div class="modal" id="checkoutModal">
+    <div class="modal-content checkout-modal">
+      <button class="modal-close" id="checkoutClose">&times;</button>
+      <div class="checkout-body" id="checkoutBody">
+        <!-- Se llena con JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Panel -->
+  <div class="admin-panel" id="adminPanel">
+    <div class="admin-header">
+      <h3>Panel de Administración</h3>
+      <button class="btn-close-admin" id="closeAdmin">&times;</button>
+    </div>
+    <form id="adminForm" class="admin-form">
+      <div class="form-group">
+        <label>Nombre del producto</label>
+        <input type="text" id="prodNombre" required />
+      </div>
+      <div class="form-group">
+        <label>Precio (USD)</label>
+        <input type="number" id="prodPrecio" min="0" step="0.01" required />
+      </div>
+      <div class="form-group">
+        <label>Categoría</label>
+        <select id="prodCategoria" required>
+          <option value="vestidos">Vestidos</option>
+          <option value="blusas">Blusas</option>
+          <option value="pantalones">Pantalones</option>
+          <option value="accesorios">Accesorios</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>URL de la imagen</label>
+        <input type="url" id="prodImagen" placeholder="https://..." />
+      </div>
+      <div class="form-group">
+        <label>Descripción</label>
+        <textarea id="prodDesc" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Agregar producto</button>
+    </form>
+    <p class="admin-note">Los productos se guardan en tu navegador (localStorage). Para un sitio real necesitarás un backend.</p>
+  </div>
+  <div class="admin-overlay" id="adminOverlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
